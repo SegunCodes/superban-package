@@ -1,0 +1,17 @@
+{
+    "name": "segun/superban",
+    "description": "Laravel Superban Package",
+    "authors": [
+        {
+            "name": "Olusegun Joe-Alabi",
+            "email": "shegstix64@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Superban\\": "src/"
+        }
+    },
+    "version": "1.0.0"
+}
