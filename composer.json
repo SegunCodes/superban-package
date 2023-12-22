@@ -1,6 +1,6 @@
 {
     "name": "segun/superban",
-    "description": "Laravel Superban Package",
+    "description": "The package provides a middleware for rate limiting and banning suspicious users",
     "authors": [
         {
             "name": "Olusegun Joe-Alabi",
@@ -13,5 +13,15 @@
             "Superban\\": "src/"
         }
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "require-dev": {
+        "phpunit/phpunit": "10.5.x-dev",
+        "orchestra/testbench": "*"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "require": {
+        "psy/psysh": "0.12.x-dev"
+    }
 }

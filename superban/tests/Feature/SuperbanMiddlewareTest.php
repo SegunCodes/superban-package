@@ -10,17 +10,6 @@ use Superban\Middleware\SuperbanMiddleware;
 
 class SuperbanMiddlewareTest extends TestCase
 {
-    protected function getEnvironmentSetUp($app)
-    {
-        // Set up any necessary environment configurations
-    }
-
-    protected function getPackageProviders($app)
-    {
-        // Register the SuperbanServiceProvider here if not auto-discovered
-        return ['Superban\SuperbanServiceProvider'];
-    }
-
     public function testMiddlewareBlocksRequestsAfterLimit()
     {
         // Use a mock for RateLimiter
@@ -62,5 +51,6 @@ class SuperbanMiddlewareTest extends TestCase
 
         // dump(Cache::get($banKey)); 
         $this->assertTrue(Cache::has($banKey));
+        $this->assertTrue(Cache::get($banKey));
     }
 }

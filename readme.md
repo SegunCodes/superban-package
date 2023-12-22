@@ -45,3 +45,5 @@ In this example:
 2 is the time window in minutes for the specified number of requests.
 1440 is the ban duration in minutes.
 
+## Running tests
+To run a test, the command `composer test` is run
